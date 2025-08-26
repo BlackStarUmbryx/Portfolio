@@ -4,21 +4,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>George Medhi | Portfolio</title>
+
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="animation.css" />
   <link rel="stylesheet" href="media.css" />
 </head>
 <body>
 
-  <!-- Navigation -->
+  <!----------------------------------- Header Section ------------------------------------------------------------------------------>
   <header>
     <div class="container header-container">
       <img src="assets/images/Blackstar_portfolio_logo.png" alt="BLACKSTAR">
 
+      <!-- Toggle Menu -->
       <button class="menu-toggle" id="menuToggle">
         <i id="bars" class="fa-solid fa-bars"></i>
         <i id="xmark" class="fa-solid fa-xmark"></i>
       </button>
+      <!------------------------------------ Navigation --------------------------------------------------------------->
       <nav class="navbar" id="navMenu">
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
@@ -29,12 +32,17 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
+  <!----------------------------------------- Hero Section ----------------------------------------------------------------------->
   <section class="hero">
-    <div class="slideUp hero-content">
+    <div class="hero-container slideUp">
+
+      <!-- Heading -->
       <h2>Hi,<br>I'm <span>George Medhi</span></h2>
+
+      <!-- Description -->
       <p class="hero-description">Creative web developer crafting clean, responsive websites<br>with a focus on performance and design.</p>
     
+      <!-- Buttons -->
       <div class="hero-buttons">
         <a href="#contact" class="btn">Hire Me</a>
         <a href="assets/YourName_Resume.pdf" class="btn outline" download>Download Resume</a>
@@ -42,110 +50,126 @@
     </div>
   </section>
 
-<section id="about" class="section about-section">
-    <h2>About Me</h2>
-    <div class="about-content">
-      
-      <!-- Profile Image -->
-      <div class="left about-image">
-        <img src="assets/images/about_me_img.png" alt="Profile Picture" />
-      </div>
-      
-      <!-- Text & Tags -->
-      <div class="slideUp about-main">
-        <div class="about-text">
-          <p>Hello! I’m a front-end web developer who specializes in crafting clean and responsive websites using HTML, CSS, and JavaScript. I love bringing designs to life and building digital experiences that are both functional and visually engaging.</p>
-          <p>I focus on pixel-perfect layouts, performance, and user-first design. Whether it’s a personal portfolio, a landing page, or a business site — I enjoy transforming ideas into digital products.</p>
-        </div>
+  <!----------------------------------------------- About Section ------------------------------------------------------------------->
+  <section id="about">
+    <div class="container about-container">
 
-        <div class="about-tag">
-          <ul>
-            <li>#HTML</li>
-            <li>#CSS</li>
-            <li>#ResponsiveDesign</li>
-            <li>#CleanCode</li>
-          </ul>
+      <!-- Heading -->
+      <h2>About Me</h2>
+
+      <div class="about-content">
+        
+        <!-- Profile Image -->
+        <div class="about-image left">
+          <img src="assets/images/about_me_img.png" alt="Profile Picture" />
+        </div>
+        
+        <!-- Text & Tags -->
+        <div class="about-main slideUp">
+
+          <div class="about-text">
+            <p>Hello! I’m a front-end web developer who specializes in crafting clean and responsive websites using HTML, CSS, and JavaScript. I love bringing designs to life and building digital experiences that are both functional and visually engaging.</p>
+            <p>I focus on pixel-perfect layouts, performance, and user-first design. Whether it’s a personal portfolio, a landing page, or a business site — I enjoy transforming ideas into digital products.</p>
+          </div>
+
+          <div class="about-tag">
+            <ul>
+              <li>#HTML</li>
+              <li>#CSS</li>
+              <li>#ResponsiveDesign</li>
+              <li>#CleanCode</li>
+            </ul>
+          </div>
         </div>
       </div>
-
     </div>
-</section>
+  </section>
 
 
-  <!-- Projects Section -->
-  <section id="projects" class="section projects">
-    <h2>My Projects</h2>
-    <div class="project-list">
+  <!------------------------------------------------------- Projects Section ------------------------------------------------------>
+  <section id="project">
+    <div class="container project-container">
+      <!-- Heading -->
+      <h2>My Projects</h2>
 
-      <div class="left project-item">
-        <div class="project-description">
-          <h3>NeuroBoostAI</h3>
-          <p>NeuroBoost helps teams and soloprenourship to do work faster.</p>
-          <a href="Projects/Neuroboost Landing Page/project1.html" class="btn">View in Browser</a>
-        </div>
-        <div class="project-img">
-          <a href="Projects/Neuroboost Landing Page/project1.html">
-            <div class="project-img-border">
-              <div class=" project-mokeup project-one">
-                <h4>NeuroBoost<span>AI</span></h4>
-              </div>
-            </div>
-            <!--<img src="assets/images/Project1_mockup1.png" alt="Project 1">-->
-          </a>
-        </div>
-      </div>
+      <!-- Project List -->
+      <div class="project-list">
 
-      <div class="right project-item">
-        <div class="project-description">
-          <h3>Task Manager</h3>
-          <p>Description of your second project.</p>
-          <a href="Projects/Neuroboost Landing Page/project2.html" class="btn">View in Browser</a>
-        </div>
-        <div class="project-img">
-          <a href="Projects/Neuroboost Landing Page/project2.html">
-            <div class="project-img-border">
-              <div class=" project-mokeup project-two">
-                <h4>Task <span>Manager</span></h4>
+        <!-- Project 1 -->
+        <div class="project-item">
+
+          <!-- Description -->
+          <div class="project-description">
+            <h3>NeuroBoostAI</h3>
+            <p>A Landing Page, providing service of personal work AI that helps teams and soloprenourship to do work faster.</p>
+            <a href="Projects/Neuroboost Landing Page/project1.html" class="btn">View in Browser</a>
+          </div>
+
+          <!-- MokeUp -->
+          <div class="project-img">
+            <a href="Projects/Neuroboost Landing Page/project1.html">
+              <div class="project-img-border">
+                <div class=" project-mokeup project-one">
+                  <h4>NeuroBoost<span>AI</span></h4>
+                </div>
               </div>
-            </div>
-            <!--<img src="assets/images/Project1_mockup1.png" alt="Project 1">-->
-          </a>
+              <!--<img src="assets/images/Project1_mockup1.png" alt="Project 1">-->
+            </a>
+          </div>
         </div>
-      </div>
-      
-      <div class="left project-item">
-        <div class="project-description">
-          <h3>Feedback & Review Platform</h3>
-          <p>Description of your third project.</p>
-          <a href="Projects/Neuroboost Landing Page/project3.html" class="btn">View in Browser</a>
-        </div>
-        <div class="project-img">
-          <a href="Projects/Neuroboost Landing Page/project3.html">
-            <div class="project-img-border">
-              <div class=" project-mokeup project-three">
-                <h4>Feedback & Review <span>Platform</span></h4>
+
+        <div class="project-item">
+          <div class="project-description">
+            <h3>Expense Tracker</h3>
+            <p>A personal expense tracker that helps people to track their expenses in one place.</p>
+            <a href="Projects/expense-tracker/build/index.html" target="_blank" class="btn">View in Browser</a>
+          </div>
+          <div class="project-img">
+            <a href="Projects/Neuroboost Landing Page/project2.html">
+              <div class="project-img-border">
+                <div class=" project-mokeup project-two">
+                  <h4>Expense <span>Tracker</span></h4>
+                </div>
               </div>
-            </div>
-            <!--<img src="assets/images/Project1_mockup1.png" alt="Project 1">-->
-          </a>
+              <!--<img src="assets/images/Project1_mockup1.png" alt="Project 1">-->
+            </a>
+          </div>
         </div>
-      </div>
-      
-      <div class="right project-item">
-        <div class="project-description">
-          <h3>E-Commerce Website</h3>
-          <p>Description of your fourth project.</p>
-          <a href="Projects/Neuroboost Landing Page/project4.html" class="btn">View in Browser</a>
-        </div>
-        <div class="project-img">
-          <a href="Projects/Neuroboost Landing Page/project4.html">
-            <div class="project-img-border">
-              <div class=" project-mokeup project-four">
-                <h4>E-commerce <span>Website</span></h4>
+        
+        <div class="project-item">
+          <div class="project-description">
+            <h3>Feedback & Review Platform</h3>
+            <p>Description of your third project.</p>
+            <a href="Projects/Neuroboost Landing Page/project3.html" class="btn">View in Browser</a>
+          </div>
+          <div class="project-img">
+            <a href="Projects/Neuroboost Landing Page/project3.html">
+              <div class="project-img-border">
+                <div class=" project-mokeup project-three">
+                  <h4>Feedback & Review <span>Platform</span></h4>
+                </div>
               </div>
-            </div>
-            <!--<img src="assets/images/Project1_mockup1.png" alt="Project 1">-->
-          </a>
+              <!--<img src="assets/images/Project1_mockup1.png" alt="Project 1">-->
+            </a>
+          </div>
+        </div>
+        
+        <div class="project-item">
+          <div class="project-description">
+            <h3>E-Commerce Website</h3>
+            <p>Description of your fourth project.</p>
+            <a href="Projects/Neuroboost Landing Page/project4.html" class="btn">View in Browser</a>
+          </div>
+          <div class="project-img">
+            <a href="Projects/Neuroboost Landing Page/project4.html">
+              <div class="project-img-border">
+                <div class=" project-mokeup project-four">
+                  <h4>E-commerce <span>Website</span></h4>
+                </div>
+              </div>
+              <!--<img src="assets/images/Project1_mockup1.png" alt="Project 1">-->
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -156,20 +180,20 @@
     <h2>Contact Me</h2>
 
     <div class="container contact-container">
-      <form class="contactForm">
+      <form id="contactForm" class="contactForm">
           <label for="name">Your Name</label>
-          <input type="text" id="name" placeholder="Your Name" name="name">
+          <input type="text" id="name" placeholder="Your Name" name="name" required>
 
           <label for="phone">Your Phone Number</label>
-          <input type="tel" id="phone" placeholder="Your Phone Number" name="phone">
+          <input type="tel" id="phone" placeholder="Your Phone Number" name="phone" required>
 
           <label for="email">Your Email</label>
-          <input type="email" id="email" placeholder="Your Email" name="email">
+          <input type="email" id="email" placeholder="Your Email" name="email" required>
 
           <label for="message">Message</label>
-          <input type="message" id="message" placeholder="Message" name="message">
+          <input type="message" id="message" placeholder="Message" name="message" required>
 
-          <input type="submit" id="submit" value="Send Message">
+          <input type="submit" id="submit" value="Send to Email & WhatsApp">
       </form>
 
       <hr>
@@ -192,6 +216,9 @@
     <p>© 2025 BlackStar. All rights reserved.</p>
   </footer>
 
+  <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
   <script src="script.js"></script>
 </body>
 </html>
