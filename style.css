@@ -19,11 +19,24 @@ body {
   line-height: 1.2;
 }
 
+/****************************** Container *****************************/
+.container {
+  padding: 1rem;
+  text-align: center;
+}
+
+.container h2 {
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  color: #00ffd5;
+}
+
 /****************************** Header *******************************/
 header {
   background-color: #111;
   position: fixed;
-  top: .2rem;
+  top: .5rem;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 15px;
@@ -35,16 +48,17 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: .5rem 1rem;
-  width: 300px;
+  padding: 2rem 3rem;
+  width: 80vw;
   height: 4rem;
   position: relative;
 }
 
 .header-container img {
-  width: 40%;
+  width: 6.25rem;
 }
 
+/* Toggle Button */
 .menu-toggle {
   font-size: 1.5rem;
   background: none;
@@ -57,6 +71,7 @@ header {
   display: none;
 }
 
+/* Navigation */
 .navbar {
   position: absolute;
   top: 60px;
@@ -94,16 +109,17 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 1rem;
+  padding-left: 3rem;
   margin: 7rem 1rem 3rem 1rem;
 }
 
-.hero-content h2 {
+/* Hero Content */
+.hero-container h2 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
-.hero-content span {
+.hero-container span {
   color: aqua;
 }
 
@@ -111,7 +127,7 @@ header {
   font-size: 1rem;
   opacity: 0.85;
   margin-bottom: 2rem;
-  width: 200px;
+  width: 40vw;
 }
 
 .hero-buttons {
@@ -147,26 +163,14 @@ header {
 }
 
 /*************************************** About Section *********************************/
-/*Section*/
-.section {
-  padding: 1rem;
-  text-align: center;
-}
-
-.section h2 {
-  font-size: 2rem;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-  color: #00ffd5;
-}
-
-.about-section {
+.about-container {
   background: linear-gradient(145deg, #121212, #0f1f1f);
   border-top: 1px solid #222;
   border-bottom: 1px solid #222;
   color: #d1faff;
 }
 
+/* Content */
 .about-content {
   display: flex;
   justify-content: center;
@@ -178,9 +182,10 @@ header {
   animation-fill-mode: forwards;
 }
 
+/* Profile Image */
 .about-image img {
-  width: 200px;
-  height: 200px;
+  width: 12.5rem;
+  height: 12.5rem;
   object-fit: cover;
   border-radius: 50%;
   border: 3px solid #00ffd5;
@@ -193,8 +198,9 @@ header {
   transform: scale(1.05);
 }
 
+/* Text & Tags */
 .about-main {
-  max-width: 300px;
+  max-width: 80vw;
 }
 
 .about-text p {
@@ -227,8 +233,7 @@ header {
   cursor: default;
 }
 
-.about,
-.projects,
+.project-container,
 .contact {
   padding: 4rem 2rem;
   text-align: center;
@@ -238,29 +243,33 @@ header {
 .project-list {
   display: grid;
   grid-template-columns: 1fr;
-  row-gap: 100px;
+  row-gap: 6.25rem;
+  justify-items: center;
   padding: 1rem;
 }
 
+/* Items */
 .project-item {
   background: black;
   padding: 1rem 1.7rem;
   border-radius: 10px;
+  width: 340px;
   height: 200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0px 10px 30px aqua;
-  transition: ease-in-out .3s;
+  transition: .3s ease-in-out;
 }
 
 .project-item:hover {
   transform: scale(1.1);
 }
 
+/* Description */
 .project-description {
   text-align: left;
-  width: 150px;
+  width: 9.375rem;
 }
 
 .project-description h3 {
@@ -276,9 +285,10 @@ header {
   font-size: .7rem;
 }
 
+/* Project Image */
 .project-img {
   background-color: #222;
-  width: 100px;
+  width: 6.25rem;
   height: 80%;
   border-radius: 15px;
   padding: .5rem;
@@ -316,13 +326,9 @@ header {
   box-shadow: 4px 4px 15px black;
 }
 
+/* Project One */
 .project-one {
   background: radial-gradient(ellipse at bottom right, #B700FF, black 70%);
-  transition: fade .7s;
-}
-
-.project-one span {
-  color: #B700FF;
 }
 
 .project-one span {
@@ -334,7 +340,7 @@ header {
 }
 
 .project-two span {
-color: blue;
+  color: blue;
 }
 
 .project-three {
@@ -386,7 +392,7 @@ color: blue;
   justify-content: center;
   flex-direction: column;
   text-align: left;
-  width: 300px;
+  width: 18.75rem;
 }
 
 
@@ -399,14 +405,13 @@ color: blue;
 
 #submit {
   background-color: #00ffd5;
-  width: 150px;
   font-weight: bold;
   padding: .5rem;
 }
 
 .contactInfo {
   font-size: large;
-  width: 450px;
+  width: 28.125rem;
 }
 
 .contactInfo div {
